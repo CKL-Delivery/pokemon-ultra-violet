@@ -1,4 +1,16 @@
-let mySprite = sprites.create(img`
+controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
+    if (mySprite.overlapsWith(mySprite2)) {
+        game.splash("as you know I am prof", "maple and are you ready")
+        game.splash("to be embrace by the word  ", "of pokemon ")
+        game.splash("pokemon are all around us", "in the sky in the sea ")
+        game.splash("and on the ground ")
+        game.splash("everyone can do anything  ", "whit pokemon ")
+        game.splash("I myself i am a pokmone ", "professor of pokemon ")
+    }
+})
+let mySprite2: Sprite = null
+let mySprite: Sprite = null
+mySprite = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
     . . . f f f 2 2 2 2 f f f . . . 
@@ -16,7 +28,7 @@ let mySprite = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-let mySprite2 = sprites.create(img`
+mySprite2 = sprites.create(img`
     . . . . f f f f . . . . 
     . . f f e e e e f f . . 
     . f f e e e e e e f f . 
@@ -56,4 +68,5 @@ let mySprite3 = sprites.create(img`
     . . . . e e e f f . . . . . . . 
     . . . . e e e e f f . . . . . . 
     `, SpriteKind.Player)
+game.splash("come here ", "it is your .prof maple")
 mySprite3.setPosition(100, 50)

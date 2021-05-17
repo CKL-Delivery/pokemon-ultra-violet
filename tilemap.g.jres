@@ -1,0 +1,35 @@
+{
+    "transparency16": {
+        "data": "hwQQABAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+        "mimeType": "image/x-mkcd-f4",
+        "tilemapTile": true
+    },
+    "level1": {
+        "id": "level1",
+        "mimeType": "application/mkcd-tilemap",
+        "data": "MTAxMDAwMTAwMDAyMDIwZTBlMDUwNTA5MDQwNDA0MGMwZDBkMGQwMjAyMDIwMjAxMGUwZTA1MDcwNDA0MDQwYjBkMGQwMjAyMDIwMjAyMGQwZDBlMGUwNzA0MDQwNDBiMGQwZDBkMDIwMTAxMDIwZDBkMDUwNTA3MDQwNDA0MGIwZDBkMGQwMjAxMDEwMjAxMDUwODA4MDcwNDA0MDQwYjBkMGQwMTAyMDEwMTAyMDIwMzA4MDgwNzA0MDQwNDBiMGQwZDBkMDIwMTAxMDEwMzAzMDgwODA3MDQwNDA0MGIwZDBkMGQwMTAxMDEwMTAxMDMwODA4MDcwNDA0MDQwYjBkMGQwMTAxMDEwMTAxMDMwNTA4MDgwNzA0MDQwNDBiMGQwZDBkMDEwMTAxMDEwMzA1MDgwODA3MDQwNDA0MGIwZDBkMGQwMTAxMDEwMjAxMDMwODA4MDcwNDA0MDQwYjBkMGQwMTAxMDEwMTAyMDUwNTA4MDgwNzA0MDQwNDBiMGUwZTBlMDEwMTAxMDIwNTA1MDgwODA3MDQwNDA0MGIwZTBlMGUwMTAxMDEwMjAxMDUwODA4MDcwNDA0MDQwYjBlMGUwMTAxMDEwMTA1MDUwNTA4MDgwNzA0MDQwNDBiMGUwZTBlMDEwMTAxMDIwMTA1MDgwODA2MDQwNDA0MGEwZTBlMDEwMTAxMjIyMjAwMDAwMDAwMDAyMjIyMjIwMjAwMDAwMDIwMjIyMjAwMjIwMDAwMDAwMDIyMjIwMDAwMDAwMDAwMDAyMjIyMDIwMDAwMDAwMDIwMjIyMjIyMDAwMDAwMDAwMDIyMjIyMjAwMDAwMDAwMDAyMjIyMjIwMDAwMDAwMDIwMjIyMjAyMDAwMDAwMDAwMDIyMjIwMjAwMDAwMDAwMDAyMjIyMjIwMDAwMDAwMDIwMjIyMjAwMDAwMDAwMjAyMjIyMjIwMDAwMDAwMDIwMjIyMjIyMDIwMDAwMDAyMDIyMjIwMjAwMDAwMDAwMjAyMjIyMjIwMjAwMDAwMDIwMjIyMg==",
+        "tileset": [
+            "myTiles.transparency16",
+            "sprites.builtin.forestTiles16",
+            "sprites.builtin.forestTiles4",
+            "sprites.builtin.forestTiles8",
+            "sprites.castle.tilePath5",
+            "sprites.swamp.swampTile1",
+            "sprites.castle.tilePath7",
+            "sprites.castle.tilePath4",
+            "sprites.castle.tileGrass2",
+            "sprites.castle.tilePath1",
+            "sprites.castle.tilePath9",
+            "sprites.castle.tilePath6",
+            "sprites.castle.tilePath3",
+            "sprites.swamp.swampTile2",
+            "sprites.builtin.forestTiles27"
+        ],
+        "displayName": "level1"
+    },
+    "*": {
+        "mimeType": "image/x-mkcd-f4",
+        "dataEncoding": "base64",
+        "namespace": "myTiles"
+    }
+}

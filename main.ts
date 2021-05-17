@@ -70,3 +70,4 @@ let mySprite3 = sprites.create(img`
     `, SpriteKind.Player)
 game.splash("come here ", "it is your .prof maple")
 mySprite3.setPosition(100, 50)
+mySprite.setPosition(116, 118)

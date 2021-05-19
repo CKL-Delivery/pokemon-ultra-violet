@@ -1,16 +1,20 @@
+namespace SpriteKind {
+    export const prof = SpriteKind.create()
+    export const traner = SpriteKind.create()
+}
 controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
-    if (mySprite.overlapsWith(mySprite2)) {
+    if (violet.overlapsWith(prof_maple)) {
         game.splash("as you know I am prof", "maple and are you ready")
-        game.splash("to be embrace by the word  ", "of pokemon ")
+        game.splash("to be embrace by the word", "of pokemon ")
         game.splash("pokemon are all around us", "in the sky in the sea ")
         game.splash("and on the ground ")
         game.splash("everyone can do anything  ", "whit pokemon ")
-        game.splash("I myself i am a pokmone ", "professor of pokemon ")
+        game.splash("I myself i am a pokmon", "professor of pokemon ")
     }
 })
-let mySprite2: Sprite = null
-let mySprite: Sprite = null
-mySprite = sprites.create(img`
+let prof_maple: Sprite = null
+let violet: Sprite = null
+violet = sprites.create(img`
     . . . . . . f f f f . . . . . . 
     . . . . f f f 2 2 f f f . . . . 
     . . . f f f 2 2 2 2 f f f . . . 
@@ -28,7 +32,7 @@ mySprite = sprites.create(img`
     . . . . . f f f f f f . . . . . 
     . . . . . f f . . f f . . . . . 
     `, SpriteKind.Player)
-mySprite2 = sprites.create(img`
+prof_maple = sprites.create(img`
     . . . . f f f f . . . . 
     . . f f e e e e f f . . 
     . f f e e e e e e f f . 
@@ -45,11 +49,11 @@ mySprite2 = sprites.create(img`
     4 4 f 6 6 6 6 6 6 f 4 4 
     . . . f f f f f f . . . 
     . . . f f . . f f . . . 
-    `, SpriteKind.Player)
-controller.moveSprite(mySprite)
-scene.cameraFollowSprite(mySprite)
+    `, SpriteKind.prof)
+controller.moveSprite(violet)
+scene.cameraFollowSprite(violet)
 tiles.setTilemap(tilemap`level1`)
-mySprite2.setPosition(122, 107)
+prof_maple.setPosition(122, 107)
 let mySprite3 = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . 2 2 2 2 2 e . . . 
@@ -67,7 +71,11 @@ let mySprite3 = sprites.create(img`
     . . . . . f f f f f . . . . . . 
     . . . . e e e f f . . . . . . . 
     . . . . e e e e f f . . . . . . 
-    `, SpriteKind.Player)
+    `, SpriteKind.traner)
 game.splash("come here ", "it is your .prof maple")
-mySprite3.setPosition(100, 50)
-mySprite.setPosition(116, 118)
+game.showLongText("walk over to .prof maple and press A", DialogLayout.Bottom)
+mySprite3.setPosition(105, 40)
+violet.setPosition(140, 250)
+if (violet.isHittingTile(CollisionDirection.Top)) {
+    tiles.setTilemap(tilemap`level5`)
+}

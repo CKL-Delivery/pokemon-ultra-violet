@@ -76,6 +76,27 @@ game.splash("come here ", "it is your .prof maple")
 game.showLongText("walk over to .prof maple and press A", DialogLayout.Bottom)
 mySprite3.setPosition(105, 40)
 violet.setPosition(140, 250)
-if (violet.isHittingTile(CollisionDirection.Top)) {
-    tiles.setTilemap(tilemap`level5`)
-}
+let nom = sprites.create(img`
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    f f f f f f f f f f f f f f f f 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    . . . . . . . . . . . . . . . . 
+    `, SpriteKind.Player)
+nom.setPosition(135, 2)
+forever(function () {
+    if (violet.overlapsWith(nom)) {
+        tiles.setTilemap(tilemap`level6`)
+    }
+})

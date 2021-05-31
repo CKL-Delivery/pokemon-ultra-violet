@@ -2,7 +2,8 @@
     "name": "POKEMON ULTRA VIOLET",
     "description": "",
     "dependencies": {
-        "device": "*"
+        "device": "*",
+        "controller": "*"
     },
     "files": [
         "main.blocks",
@@ -10,13 +11,14 @@
         "README.md",
         "assets.json",
         "tilemap.g.jres",
-        "tilemap.g.ts"
+        "tilemap.g.ts",
+        "main.py"
     ],
     "testFiles": [
         "test.ts"
     ],
     "targetVersions": {
-        "target": "1.4.41",
+        "target": "1.4.43",
         "targetId": "arcade"
     },
     "supportedTargets": [

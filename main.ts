@@ -11,6 +11,9 @@ controller.A.onEvent(ControllerButtonEvent.Pressed, function () {
         game.splash("everyone can do anything  ", "whit pokemon ")
         game.splash("I myself i am a pokmon", "professor of pokemon ")
     }
+    if (violet.tileKindAt(TileDirection.Top, assets.tile`myTile1`)) {
+        tiles.setTilemap(tilemap`level7`)
+    }
 })
 let prof_maple: Sprite = null
 let violet: Sprite = null
@@ -72,10 +75,9 @@ let mySprite3 = sprites.create(img`
     . . . . e e e f f . . . . . . . 
     . . . . e e e e f f . . . . . . 
     `, SpriteKind.traner)
-game.splash("come here ", "it is your .prof maple")
-game.showLongText("walk over to .prof maple and press A", DialogLayout.Bottom)
 mySprite3.setPosition(105, 40)
 violet.setPosition(140, 250)
+game.splash("come here ", "it is your .prof maple")
 let nom = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     . . . . . . . . . . . . . . . . 
@@ -95,8 +97,12 @@ let nom = sprites.create(img`
     . . . . . . . . . . . . . . . . 
     `, SpriteKind.Player)
 nom.setPosition(135, 2)
+game.showLongText("walk over to .prof maple and press A", DialogLayout.Bottom)
 forever(function () {
     if (violet.overlapsWith(nom)) {
         tiles.setTilemap(tilemap`level6`)
+        mySprite3.destroy()
+        prof_maple.destroy()
+        violet.setPosition(200, 500)
     }
 })
